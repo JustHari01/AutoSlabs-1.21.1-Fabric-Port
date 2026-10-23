@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "io.github.andrew6rant.autoslabs.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PaneBlockMixin",
+    "ServerPlayerInteractionManagerMixin",
+    "SlabBlockMixin",
+    "StateManagerBuilderMixin",
+    "StateMixin"
+  ],
+  "client": [
+    "BlockRenderManagerMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "InGameHudMixin",
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

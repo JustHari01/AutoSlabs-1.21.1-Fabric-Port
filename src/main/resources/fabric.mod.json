@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "autoslabs",
+  "version": "${version}",
+  "name": "AutoSlabs (Unofficial 1.21.1 Fabric Port)",
+  "description": "Unofficial Minecraft 1.21.1 Fabric port of AutoSlabs. Adds vertical slab states to existing vanilla and modded slabs without registering new blocks.",
+  "authors": [
+    "Andrew6rant (original AutoSlabs)",
+    "JustHari01 (1.21.1 port)"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/autoslabs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.andrew6rant.autoslabs.AutoSlabs"
+    ],
+    "client": [
+      "io.github.andrew6rant.autoslabs.AutoSlabsClient"
+    ],
+    "modmenu": [
+      "io.github.andrew6rant.autoslabs.config.ConfigEntrypoint"
+    ]
+  },
+  "mixins": [
+    "autoslabs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "brrp_v1": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
